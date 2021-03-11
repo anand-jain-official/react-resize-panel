@@ -1,5 +1,5 @@
 {
-  "name": "@anand-jain-official/react-resize-panel",
+  "name": "react-resize-panel-v2",
   "version": "0.1.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
