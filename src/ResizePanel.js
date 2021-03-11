@@ -77,6 +77,9 @@ class ResizePanel extends React.Component {
 
   handleDrag = (e, ui) => {
     const { direction } = this.props;
+    if(this.props.onResize) {
+      this.props.onResize();
+    }
     const factor = direction === "e" || direction === "s" ? -1 : 1;
 
     // modify the size based on the drag delta
