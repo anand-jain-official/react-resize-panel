@@ -86,6 +86,9 @@ class ResizePanel extends React.Component {
 
   handleDragEnd = (e, ui) => {
     this.validateSize();
+    if(this.props.onDragEnd) {
+      this.props.onDragEnd();
+    }
   };
 
   render() {
